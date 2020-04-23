@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>   
+    <%- include ('partials/head.html') -%> 
+</head>
+<body>
+    <%- include ('partials/navigation.html') -%>
+    <div class="container">
+        <div class="col-md-12">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="https://www.youtube.com/watch?v=xbhCPt6PZIU"><img src="/img/led.png" class="d-block w-100" alt="Led Zeppelin"></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4">MUSICA</h1>
+                        <p>Led Zeppelin | Stairway To Heaven</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://www.youtube.com/watch?v=I1KfzNn1QQg"><img src="/img/karmaland.png" class="d-block w-100" alt="Karmaland"></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4">VIDEOJUEGOS</h1>
+                        <p>AuronPlay | Karmaland</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://www.youtube.com/watch?v=B3VJx1ZE2rk"> <img src="/img/milenio.png" class="d-block w-100" alt="Milenio"></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4">NOTICIAS</h1>
+                        <p>Milenio | SEP detallara medidad en escuelas </p>
+                      </div>
+                    </div>
+                </div>
+                  
+                 <div id="botones" style="font-size: 60px; color: red">
+                  <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                  </a>
+                 </div>          
+        </div>
+    </div>
+    <p></p>
+      <%- include ('partials/footer.html') -%>
+</body>
+</html>

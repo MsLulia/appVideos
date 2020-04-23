@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include ('partials/head.html') -%>
+</head>
+<body>
+    <%- include ('partials/navigation.html') -%>
+    <div class="wrap">
+        <h4 class="display-3">Categorias</h4>
+        <div class="videosfav">
+            <div class="categoriaslista">
+                <a href="#" class="categoriaVideo" category="todo">Todo</a>
+                <a href="#" class="categoriaVideo" category="musica">Musica</a>
+                <a href="#" class="categoriaVideo" category="videojuegos">Videojuegos</a>
+                <a href="#" class="categoriaVideo" category="noticia">Noticias</a>
+                <a href="#" class="categoriaVideo" category="peliculas">Peliculas</a>
+                <a href="#" class="categoriaVideo" category="aprendizaje">Apreendizaje</a>
+            </div>
+            <section class="videos">
+                <div class="video" category="musica">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xbhCPt6PZIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video" category="videojuegos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I1KfzNn1QQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video" category="noticia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B3VJx1ZE2rk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video" category="peliculas">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CKBFV1xltqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video" category="aprendizaje">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cqMfPS8jPys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <%- include ('partials/footer.html') -%>
+</body>
+</html>
